@@ -9,9 +9,10 @@ public class GoodCalc extends Calculator{
 	}
 	public double average(int[] a) {
 		double sum=0;
-		for (int i = 0; i < a.length; i++)
-			sum += a[i];
+		for (int i = 0; i < a.length; i++) 
+			sum += a[i];			
 		return sum/a.length;
+	
 	}
 	public static void main(String[] args) {
 		GoodCalc c=new GoodCalc();
@@ -19,4 +20,5 @@ public class GoodCalc extends Calculator{
 		System.out.println(c.subtract(2, 3));
 		System.out.println(c.average(new int [] {2,3,4}));
 	}
+
 }
